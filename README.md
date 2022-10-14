@@ -1,43 +1,43 @@
-## Arvutivõrgu alused
+# Arvutivõrgu alused
 Võrgu identifikaatorid
 
-## Hostinimi:
+# Hostinimi:
 Iga võrgu seade on seotud unikaalse seadmega, mida nimetatakse hostinimeks.
 Email, kasutajnimi@server 
 kasutajanimi@ipaadress
 
-## IP-aadress:
+# IP-aadress:
 IP aadress on iga Internetis oleva seadme kordumatu identifikaator. IP-aadressi pikkus on 32 bitti. IPv6 aadress on 128 bitti.
 
-= IPv6 on IP-protokolli uus versioon, mis on loodud eelmise versiooni (IPv4) probleemide lahendamiseks, kasutades aadressi pikkust 128 bitti, mitte 32.
+## IPv6 on IP-protokolli uus versioon, mis on loodud eelmise versiooni (IPv4) probleemide lahendamiseks, kasutades aadressi pikkust 128 bitti, mitte 32.
 
-# NAT
+## NAT
 Kasutatakse privaatse IP-aadressiga hostidele juurdepääsu võimaldamiseks avalikku võrku.
 
-== DHCP Server
+## DHCP Server
 annab võrgukonfi
 
-== Unicast
+## Unicast
 Unicast-side toimub ühest võrgus olevast seadmest teise võrguseadmesse.
 
-== Multicast
+## Multicast
 MultiCast-side toimub ühest võrgus olevast seadmest paljude, kuid mitte kõigi võrgus olevate seadmetega.
 
-== Broadcast
+## Broadcast
 Leviedastus toimub ühest võrguseadmest kõigi võrgus olevate seadmete vahel.
 
-== Süsteemi privaatne IP-aadress , mida kasutatakse samas võrgus suhtlemiseks. Kasutades privaatset IP-andmeid või teavet saab saata või vastu võtta samas võrgus. 
-== Süsteemi avalik IP-aadress on IP-aadress, mida kasutatakse väljaspool võrku suhtlemiseks.
+## Süsteemi privaatne IP-aadress , mida kasutatakse samas võrgus suhtlemiseks. Kasutades privaatset IP-andmeid või teavet saab saata või vastu võtta samas võrgus. 
+## Süsteemi avalik IP-aadress on IP-aadress, mida kasutatakse väljaspool võrku suhtlemiseks.
 
 
 
-## DNS-server:
+# DNS-server:
 DNS tähendab domeeninimede süsteemi. See on server, mis tõlgib URL-id või veebiaadressid nende vastavateks IP-aadressideks.
 
-## MAC-aadress:
+# MAC-aadress:
 MAC kui füüsiline aadress, mis on iga hosti kordumatu identifikaator ja on seotud võrguliidese kaardiga (NIC). MAC-aadressi üldine pikkus on: 12-kohaline / 6 baiti / 48 bitti
 
-## Port:
+# Port:
 On kanal, mis võimaldab võrgu kasutajatel rakendusele andmeid saata või vastu võtta. Igal hostil võib töötada mitu rakendust. Kõik need rakendused tuvastatakse pordi numbri abil, milles need töötavad.
 
 
