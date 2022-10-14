@@ -9,9 +9,9 @@ kasutajanimi@ipaadress
 ## IP-aadress:
 IP aadress on iga Internetis oleva seadme kordumatu identifikaator. IP-aadressi pikkus on 32 bitti. IPv6 aadress on 128 bitti.
 
-== IPv6 on IP-protokolli uus versioon, mis on loodud eelmise versiooni (IPv4) probleemide lahendamiseks, kasutades aadressi pikkust 128 bitti, mitte 32.
+= IPv6 on IP-protokolli uus versioon, mis on loodud eelmise versiooni (IPv4) probleemide lahendamiseks, kasutades aadressi pikkust 128 bitti, mitte 32.
 
-== NAT
+# NAT
 Kasutatakse privaatse IP-aadressiga hostidele juurdepääsu võimaldamiseks avalikku võrku.
 
 == DHCP Server
