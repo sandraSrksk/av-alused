@@ -41,12 +41,17 @@ MAC kui füüsiline aadress, mis on iga hosti kordumatu identifikaator ja on seo
 On kanal, mis võimaldab võrgu kasutajatel rakendusele andmeid saata või vastu võtta. Igal hostil võib töötada mitu rakendust. Kõik need rakendused tuvastatakse pordi numbri abil, milles need töötavad.
 
 # Käsurea näited
-## ping
+- ping
 Testib IP aadressi, saab vastu võtta taotlusi.
-    ## Harjutus:
-## printf
-## 
-
+- Printf 
+On käsk stringide printimiseks. Prindib välja, mis sinna on pandud
+- tcpdump  
+Et näha TCP/IP-d ja muid pakette, mis edastatakse või võetakse vastu ühendatud võrgu kaudu.
+- netstat	
+Näitab TCP/IP ühenduse staatust
+- sudo
+annab käsklustele loa
+- 
 
 
 
