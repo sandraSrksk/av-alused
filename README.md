@@ -40,6 +40,15 @@ MAC kui füüsiline aadress, mis on iga hosti kordumatu identifikaator ja on seo
 # Port:
 On kanal, mis võimaldab võrgu kasutajatel rakendusele andmeid saata või vastu võtta. Igal hostil võib töötada mitu rakendust. Kõik need rakendused tuvastatakse pordi numbri abil, milles need töötavad.
 
+# Käsurea näited
+## ping
+Testib IP aadressi, saab vastu võtta taotlusi.
+    ## Harjutus:
+## printf
+## 
+
+
+
 
 ## Kõik maailma domeeninime tipud:
 https://www.iana.org/domains/root/db
