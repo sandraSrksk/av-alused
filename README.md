@@ -50,39 +50,38 @@ On kanal, mis võimaldab võrgu kasutajatel rakendusele andmeid saata või vastu
 - host - domeeninimede IP aadresside leidmiseks
 
 ## Harjutus 1
--	ip addr show eth0 - näitab esimese etherneti IP aadressi
-    10: eth0@if11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default
-        link/ether 02:42:ac:11:00:04 brd ff:ff:ff:ff:ff:ff link-netnsid 0
-        inet 172.17.0.4/16 brd 172.17.255.255 scope global eth0
-            valid_lft forever preferred_lft forever
--	ip route show - kirjeldab teid sihtkohtadesse
-default via 172.17.0.1 dev eth0
-172.17.0.0/16 dev eth0 proto kernel scope link src 172.17.0.4
-172.18.0.0/16 dev docker0 proto kernel scope link src 172.18.0.1 linkdown
--	ping -c3 8.8.8.8 - seal on veebiaadress millega võimalik ühenduda
-PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
-64 bytes from 8.8.8.8: icmp_seq=1 ttl=114 time=1.14 ms
-64 bytes from 8.8.8.8: icmp_seq=2 ttl=114 time=0.319 ms
-64 bytes from 8.8.8.8: icmp_seq=3 ttl=114 time=0.376 ms
-3 packets transmitted, 3 received, 0% packet loss, time 2064ms
--	traceroute www.udacity.com - 
-traceroute to www.udacity.com (104.18.41.189), 30 hops max, 60 byte packets
- 1  172.17.0.1 (172.17.0.1)  0.054 ms  0.015 ms  0.016 ms
- 2  * * *
- 3  104.18.41.189 (104.18.41.189)  4.798 ms 141.101.65.12 (141.101.65.12)  5.144 ms 172.17.0.1 (172.17.0.1)  0.016 ms
--	host -t aaaa google.com - 
-google.com has IPv6 address 2a00:1450:4013:c14::8b
-google.com has IPv6 address 2a00:1450:4013:c14::65
-google.com has IPv6 address 2a00:1450:4013:c14::64
-google.com has IPv6 address 2a00:1450:4013:c14::66
--	mtr www.udacity.com - 
-My traceroute  [v0.94]
-cs-578716491323-default (172.17.0.4) -> www.udacity.com                                                     2022-10-20T17:27:47+0000
-Keys:  Help   Display mode   Restart statistics   Order of fields   quit
--	host -t mx udacity.com - 
-udacity.com mail is handled by 10 aspmx.l.google.com.
-udacity.com mail is handled by 20 alt1.aspmx.l.google.com.
+If you run ping -c3 8.8.8.8  and get the output, 3 packets transmitted, 3 received, 0% packet loss, which of these conclusions seem reasonable?
+Your computer has interne access 
+The computer at 8.8.8.8 is up and running - (sest saan sõnumeid sealt)
+Your ISP knows how to send traffic towards Google.  (Google server on sellel aadressil.)
 
+## Harjutus 2
+So what happens if on your Linux machine you run this command, printf 'HEAD / HTTP/1.1\r\nHost: en.wikipedia.org\r\n\r\n' | nc en.wikipedia.org 80
+Saame tagasi ifot Wikipedia serverilt
+
+## Harjutus 3
+What web servers does Google use? - gws (Google Web Server)
+printf 'HEAD / HTTP/1.1\r\nHost: www.google.com\r\n\r\n' | nc www.google.com 80
+HTTP/1.1 200 OK
+date -"-
+Server: gws
+
+## Harjutus 4
+How would you get nc on port 3456?
+käsuga: nc -l 3456 
+
+## Harjutus 5
+With 2 terminals SSHed into yur Linux box, on one of them, set an nc process listening on a port. Pick whatever port number 4356.  And in the other terminal, connect to it with nc localhost 3456. Figure out how to disconnect them without just closing the SHH session
+Ctr D ütleb ühele nc välju ja teine väljub, kui üks o ühenduse lõpetanud
+
+## Harjutus 6 
+Using netcat - fnd out what is the highest port that you can listen on:
+Tava kasutaja saab kuulata 1024 - 65535 porti vahemikus
+Kasutades näiteks sudo käsku oleks võimalik kuulata kõige madalamalt 1
+
+## Harjutus 7
+Milline programm kuulab?
+Kasutansudo lsof -i . see, kus on kirjas LISTEN
 
 
 ## Kõik maailma domeeninime tipud:
