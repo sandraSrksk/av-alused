@@ -83,6 +83,22 @@ Kasutades näiteks sudo käsku oleks võimalik kuulata kõige madalamalt 1
 Milline programm kuulab?
 Kasutansudo lsof -i . see, kus on kirjas LISTEN
 
+## Harjutus 8
+Käivitan käsu printf 'HTTP/1.1 302 Moved\r\nLocation: https://www.eff.org/' | nc -l 2345 
+viin brauseri serveri IP aadressile, port 2345 
+Vastus: brauser näitab eff.org kodulehte ja nc väljub.
+
+## Harjutus 9
+Käivitasin käsu: ping google.com
+IP aadress: 108.177.127.113)
+Googlel on palju IP aadresse, seega kõik ei saa sama tulemust
+
+## Harjutus 10
+Käivitan host käsu host google.com
+Sain teada, et google.comil on 6 IPv4 ja 4 IPv6 aadressi
+
+## Harjutus 11
+
 
 ## Kõik maailma domeeninime tipud:
 https://www.iana.org/domains/root/db
