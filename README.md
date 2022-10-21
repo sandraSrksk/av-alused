@@ -98,6 +98,17 @@ Käivitan host käsu host google.com
 Sain teada, et google.comil on 6 IPv4 ja 4 IPv6 aadressi
 
 ## Harjutus 11
+DNS-kirjete nimed ja tähendused:
+CNAME - Alias ühest nimest teise
+AAAA - IPv6 aadress , tähistamaks nende neljakordset suurust
+NS - DNS nime server
+
+## Harjutus 12:
+Mitu erinevat 4-bitist väärtust on olemas: 16, sest iga bit duubeldab.
+
+## Harjutus 13:
+Arvestades, et kõrgeim porti number on 65535, siis mitu biti on vaja porti numbriks?: 
+62535 saab esitada kahe okteti või 16 bitiga. Kui summa on 65536, siis on üks igast 16 positsioonist. Järeldus: pordinumbreid esitatakse 16-bitiste väärtustena.
 
 
 ## Kõik maailma domeeninime tipud:
