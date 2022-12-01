@@ -49,6 +49,27 @@ On kanal, mis võimaldab võrgu kasutajatel rakendusele andmeid saata või vastu
 - nc (NetCat) - TCP ühendused, portide kuulamine, IPv4 ja IPv6
 - host - domeeninimede IP aadresside leidmiseks
 
+## Sisu päringud
+Enamik nc abil on saadud HEAD-päringud. HEAD  palub serveril saata ainult päised, mitte saata täielikke andmeid. 
+Saab teha ka GET-i taotlusi:
+printf "GET / HTTP/1.1\r\nHost: www.example.com\r\n\r\n" | nc www.example.com 80
+## DNS
+Domeeni nime süsteem
+Kui DNS läheb maha siis ei saa avada veebilehte. Samuti ka kaitsemehanismid HTTPle
+Et leida informatsiooni DNS kohta, käsud:
+- Host (host -t a google.com) kergesti loetav
+- Dig, tehnilisem aga rohkem infot.
+    ## Caching vahemälu
+    Hajutatud kataloog, et üks DNS-server ei peaks teadma kõiki maailma kõigi nimede ja domeenide kirjeid.
+    Vahemällu salvestatakse kõik seni, kuni see suudab õige vastusega naasta.
+    Neil on ettenähtud aeg, nii on informatsioon värske
+ ## Domeenid
+Top domeenid on nt com, net, org, edu
+Alamdomeenid (nt wwww.näide.com j- näide.com) 
+domains.google.com (loo domeen)
+
+
+
 ## Harjutus 1
 If you run ping -c3 8.8.8.8  and get the output, 3 packets transmitted, 3 received, 0% packet loss, which of these conclusions seem reasonable?
 Your computer has interne access 
